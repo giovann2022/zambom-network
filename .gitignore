@@ -22,6 +22,11 @@ node_modules/
 dist/
 build/
 
+# Cloudflare Wrangler (gerados em build)
+.wrangler/
+wrangler.jsonc.local
+.dev.vars
+
 # Arquivos sensíveis
 .env
 .env.*

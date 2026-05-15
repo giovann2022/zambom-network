@@ -1,9 +1,13 @@
-# Redirecionamentos — Cloudflare Pages
+# Redirecionamentos — Cloudflare Pages / Workers Assets
 # Documentação: https://developers.cloudflare.com/pages/configuration/redirects/
+#
+# OBS: Cloudflare exige paths relativos (não URLs absolutas).
+# O redirecionamento www → apex (sem-www) é feito automaticamente pela
+# Cloudflare quando ambos domínios estão configurados em "Custom domains"
+# do projeto Pages — não precisa configurar aqui.
+#
+# O HTTP → HTTPS também é automático via SSL/TLS edge (configurado em
+# SSL/TLS → Overview → Always Use HTTPS).
 
-# Redireciona www → apex (domínio sem www)
-https://www.zambomnetwork.com.br/*  https://zambomnetwork.com.br/:splat  301
-
-# Força HTTPS (Cloudflare já faz isso por padrão, mas reforça)
-http://zambomnetwork.com.br/*       https://zambomnetwork.com.br/:splat  301
-http://www.zambomnetwork.com.br/*   https://zambomnetwork.com.br/:splat  301
+# Exemplo (deixe comentado se não for usar):
+# /pagina-antiga    /pagina-nova    301

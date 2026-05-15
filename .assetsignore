@@ -1,0 +1,27 @@
+# Arquivos que NÃO devem ser servidos publicamente pelo Cloudflare Pages
+# Sintaxe: igual ao .gitignore
+# Documentação: https://developers.cloudflare.com/workers/static-assets/binding/#ignoring-assets
+
+# Pastas internas do git e wrangler — NUNCA expor!
+.git
+.git/**
+.wrangler
+.wrangler/**
+
+# Arquivos de configuração que vazariam metadados
+wrangler.jsonc
+wrangler.toml
+.gitignore
+.assetsignore
+
+# Documentação interna do projeto (não precisa estar no site)
+DEPLOY.md
+README.md
+
+# OS / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode
+.idea
+*.swp
