@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Bloquear bots de IA agressivos (opcional — descomente para ativar)
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: CCBot
+# Disallow: /
+
+Sitemap: https://zambomnetwork.com.br/sitemap.xml

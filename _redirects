@@ -1,0 +1,9 @@
+# Redirecionamentos — Cloudflare Pages
+# Documentação: https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Redireciona www → apex (domínio sem www)
+https://www.zambomnetwork.com.br/*  https://zambomnetwork.com.br/:splat  301
+
+# Força HTTPS (Cloudflare já faz isso por padrão, mas reforça)
+http://zambomnetwork.com.br/*       https://zambomnetwork.com.br/:splat  301
+http://www.zambomnetwork.com.br/*   https://zambomnetwork.com.br/:splat  301
