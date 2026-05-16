@@ -33,3 +33,7 @@ wrangler.jsonc.local
 *.pem
 *.key
 secrets.json
+
+.dev.vars*
+!.dev.vars.example
+!.env.example
